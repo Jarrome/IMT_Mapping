@@ -4,7 +4,7 @@ Yuan, Yijun, and Nüchter Andreas. (2022) An Algorithm for the SE(3)-Transformat
 
 [Preprint]()
 
-* The thing it does
+* What the algorithm does
     <img src="./assets/twobranch.png" alt="drawing" width="900" />
 
 Two flow paths to SE(3)-transform and deep encode
