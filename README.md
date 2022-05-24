@@ -8,10 +8,10 @@ Yuan, Yijun, and Nüchter Andreas. (2022) An Algorithm for the SE(3)-Transformat
 
 Two flow paths to SE(3)-transform and deep encode
 the point cloud. The **solid line** indicates the **transform-
-encoding path** to generate implicit map of $`T_g`$ -transformed
+encoding path** to generate implicit map of $\mathbf T_g$ -transformed
 point cloud P. The **dash line** shows the **encoding-transform
 path**, transforming the map of features with transformation
-$`S_g`$ , that is introduced in this paper.
+$\mathbf S_g$ , that is introduced in this paper.
 
 ## 0. Install
 ```
