@@ -4,7 +4,8 @@ Yuan, Yijun, and Nüchter Andreas. (2022) An Algorithm for the SE(3)-Transformat
 
 [Preprint]()
 
-![Plot](./assets/twobranch.png)
+* The thing it does
+    <img src="./assets/twobranch.png" alt="drawing" width="900" />
 
 Two flow paths to SE(3)-transform and deep encode
 the point cloud. The **solid line** indicates the **transform-
@@ -12,6 +13,9 @@ encoding path** to generate implicit map of $\mathbf T_g$ -transformed
 point cloud P. The **dash line** shows the **encoding-transform
 path**, transforming the map of features with transformation
 $\mathbf S_g$ , that is introduced in this paper.
+
+* Application with proposed **remapping module** that **allows for loop clusure**
+![Plot](./assets/pipeline_neuralImplicit.png)
 
 ## 0. Install
 ```
@@ -23,7 +27,9 @@ pip install torch-scatter==1.4 open3d numba opencv-python
 ```
 *Be sure you have build-essential before torch-scatter (sudo apt install build-essential)*
 
+
 ## 1. Quick Reconstruction Demo
+
 We have pretrained parameter of encoder-decoder in ```./treasure``` for easy use.
 
 **Prepare data**
@@ -33,7 +39,7 @@ We have pretrained parameter of encoder-decoder in ```./treasure``` for easy use
 
 *(Replaca dataset requires contacting [iMAP](https://edgarsucar.github.io/iMAP/) author, and put into ./data as described in ./config/ifr-fusion-replica.yaml)*
 
-* Download our [pose stream](https://drive.google.com/drive/folders/1NLp7eGjmjr5zK8QnRqlyghKEH-sn_0mj?usp=sharing) computed from ORB-SLAM2.
+* For quick play, please download our [pose stream](https://drive.google.com/drive/folders/1NLp7eGjmjr5zK8QnRqlyghKEH-sn_0mj?usp=sharing) computed from ORB-SLAM2.
 ```mkdir ./treasure/orbslam2_record``` and unzip inside, for example, you will have ```./treasure/orbslam2_record/lrkt0n```.
 
 1.  **Reconstruction Demo** (will draw a window with incremental reconstruction and output the intermediary mesh in args.outdir. )
