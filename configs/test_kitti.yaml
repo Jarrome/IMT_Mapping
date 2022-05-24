@@ -1,0 +1,48 @@
+# data
+basedir: "./data/kitti_odometry/dataset/sequences"
+sequence: 0
+
+# Network parameters (network structure, etc. will be inherited from the training config)
+training_hypers: "./treasure/hyper.json"
+using_epoch: 600
+
+# Separate tracking and meshing.
+run_async: false
+# Enable visualization
+vis: false
+resolution: 4
+
+# These two define the range of depth observations to be cropped. Unit is meter.
+depth_cut_min: 0.5
+depth_cut_max: 5.0
+
+meshing_interval: 20
+integrate_interval: 5
+
+# Mapping parameters
+mapping:
+  # Bound of the scene to be reconstructed
+  bound_min: [-200., -800., -100.]
+  bound_max: [800., 800., 200.]
+  voxel_size: 4.
+  # Prune observations if detected as noise.
+  prune_min_vox_obs: 0
+  ignore_count_th: 100
+  encoder_count_th: 600.0
+
+vis: False
+
+
+# Tracking parameters
+tracking:
+  # An array defining how the camera pose is optimized.
+  # Each element is a dictionary:
+  #   For example {"n": 2, "type": [['sdf'], ['rgb', 1]]} means to optimize the summation of sdf term and rgb term
+  # at the 1st level pyramid for 2 iterations.
+  iter_config:
+    - {"n": 10, "type": [['sdf']]}
+    - {"n": 50, "type": [['sdf']]}
+  sdf:
+    robust_kernel: "huber"
+    robust_k: 5.0
+    subsample: 0.5
