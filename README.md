@@ -46,8 +46,6 @@ python pose_fmt.py ./configs/ifr-fusion-lr-kt0.yaml
 python exp_transform.py ./configs/ifr-fusion-lr-kt0.yaml
 ``` 
 
----
-
 Please find more detail in configs/[config_file.yaml].
 
 *NOTE: the first run may takes some time to compile functions of system/ext from DI-Fusion*
@@ -59,6 +57,7 @@ Reconstruction goes with ```python pose_fmt.py [config_file.yaml] ``` where we p
 
 In addition, we provide a guidline on *what does it mean* in [config readme](./configs/).
 
+---
 
 ## (Optional) Training the VNN-Encoder and Decoder
 As we have provided the pretained model, this step is not necessary, as the model is a transfering from synthetic to real scenario.
@@ -71,6 +70,8 @@ But for friends are interested, we provid as follow:
 *NOTE: put the ShapeNet data on SSD because read on HDD during training is extremely slow...*
 
 This training step is actually the same as DI-Fusion, we replace encoder with SO3 equivariant layer from vnn.
+
+---
 
 ## (Optional) What's more
 We further rewrite and extend the test scope to a campus-scale dataset KITTI-odometry following reviewer's suggestion. 
