@@ -1,8 +1,11 @@
 # An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions
 
+Yuan, Yijun, and Nüchter Andreas. (2022) An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions.
+
 [Preprint]()
 
-![](./assets/twobranch.png)
+![Plot](./assets/twobranch.png)
+
 Two flow paths to SE(3)-transform and deep encode
 the point cloud. The **solid line** indicates the **transform-
 encoding path** to generate implicit map of $`T_g`$ -transformed
