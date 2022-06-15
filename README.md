@@ -1,6 +1,8 @@
-# An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions
+# SE(3)-Transformation on Neural Implicit Maps for Remapping Functions
 
-Yuan, Yijun, and Nüchter Andreas. (2022) An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions.
+This repository contains the implementation of our **RAL 2022** paper: **An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions**.
+
+[Yijun Yuan](https://jarrome.github.io/), [Andreas Nüchter](https://www.informatik.uni-wuerzburg.de/space/mitarbeiter/nuechter/)
 
 [Preprint]()
 
@@ -96,6 +98,19 @@ Download [kitti-odometry data](http://www.cvlibs.net/datasets/kitti/eval_odometr
 ```
 python pose_fmt_kitti.py ./configs/test_kitti.yaml
 ``` 
+
+
+## Citation
+If you find this work interesting, please cite us:
+```bibtex
+@article{yuan2022indirect,
+  title={An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions},
+  author={Yuan, Yijun and N{\"u}chter, Andreas},
+  journal={IEEE Robotics and Automation Letters},
+  year={2022},
+  publisher={IEEE}
+}
+```
 
 
 ## Acknowlegement
