@@ -99,6 +99,9 @@ Download [kitti-odometry data](http://www.cvlibs.net/datasets/kitti/eval_odometr
 python pose_fmt_kitti.py ./configs/test_kitti.yaml
 ``` 
 
+## What's Next?
+1. A full reconstruction release.
+
 
 ## Citation
 If you find this work interesting, please cite us:
