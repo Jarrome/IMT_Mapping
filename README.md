@@ -106,7 +106,7 @@ python pose_fmt_kitti.py ./configs/test_kitti.yaml
 ## Citation
 If you find this work interesting, please cite us:
 ```bibtex
-@article{yuan2022indirect,
+@article{yuan2022transform,
   title={An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions},
   author={Yuan, Yijun and N{\"u}chter, Andreas},
   journal={IEEE Robotics and Automation Letters},
