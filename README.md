@@ -4,7 +4,7 @@ This repository contains the implementation of our **RAL 2022** paper: **An Algo
 
 [Yijun Yuan](https://jarrome.github.io/), [Andreas Nüchter](https://www.informatik.uni-wuerzburg.de/space/mitarbeiter/nuechter/)
 
-[Preprint](https://arxiv.org/abs/2206.08712) [Project](https://jarrome.github.io/IMT-MAP/)
+[Preprint](https://arxiv.org/abs/2206.08712) |  [Project](https://jarrome.github.io/IMT-MAP/)
 
 * What the algorithm does
     <img src="./assets/twobranch.png" alt="drawing" width="900" />
