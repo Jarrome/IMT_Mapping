@@ -27,8 +27,7 @@ conda activate recons
 conda install pytorch=1.6.0 torchvision=0.7.0  cudatoolkit=10.1 -c pytorch
 pip install torch-scatter==1.4 open3d numba opencv-python
 ```
-*Be sure you have build-essential before torch-scatter (sudo apt install build-essential)*
-*If you have any compile problem on torch-scatter, please directly copy that torch-scatter function into the script, or you can open an issue. :D*
+*Be sure you have build-essential before torch-scatter (sudo apt install build-essential). If you still have problem on torch-scatter, please directly copy that torch-scatter function into the script.*
 
 ## 1. Quick Reconstruction Demo
 
