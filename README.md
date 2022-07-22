@@ -1,10 +1,10 @@
-# SE(3)-Transformation on Neural Implicit Maps for Remapping Functions
+# [SE(3)-Transformation on Neural Implicit Maps for Remapping Functions](https://jarrome.github.io/IMT-MAP/)
 
 This repository contains the implementation of our **RAL 2022** paper: **An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions**.
 
 [Yijun Yuan](https://jarrome.github.io/), [Andreas Nüchter](https://www.informatik.uni-wuerzburg.de/space/mitarbeiter/nuechter/)
 
-[Preprint](https://arxiv.org/abs/2206.08712) |  [Project](https://jarrome.github.io/IMT-MAP/)
+[Preprint](https://arxiv.org/abs/2206.08712) |  [website](https://jarrome.github.io/IMT-MAP/)
 
 * What the algorithm does
     <img src="./assets/twobranch.png" alt="drawing" width="900" />
@@ -28,7 +28,7 @@ conda install pytorch=1.6.0 torchvision=0.7.0  cudatoolkit=10.1 -c pytorch
 pip install torch-scatter==1.4 open3d numba opencv-python
 ```
 *Be sure you have build-essential before torch-scatter (sudo apt install build-essential)*
-
+*If you have any compile problem on torch-scatter, please directly copy that torch-scatter function into the script, or you can open an issue. :D*
 
 ## 1. Quick Reconstruction Demo
 
@@ -117,6 +117,6 @@ If you find this work interesting, please cite us:
 
 
 ## Acknowlegement
-* This project is on top of [DI-Fusion](https://github.com/huangjh-pub/di-fusion), we thank Jiahui Huang for his warmly responses and helps on DI-Fusion.
+* This project is on top of [DI-Fusion](https://github.com/huangjh-pub/di-fusion), we thank Jiahui Huang for his warm responses and helps on DI-Fusion.
 * The encoder part is implemented with [vnn](https://github.com/FlyingGiraffe/vnn).
-* The replaca dataset provided from [iMAP](https://arxiv.org/abs/2103.12352) author Edgar Sucar. We thank the warmly help on that dataset from Zihan Zhu.
+* The replaca dataset is provided from [iMAP](https://arxiv.org/abs/2103.12352) author Edgar Sucar. We thank the warm help on that dataset from Zihan Zhu.
