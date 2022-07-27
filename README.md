@@ -8,7 +8,7 @@ This repository contains the implementation of our **RAL 2022** paper: **An Algo
 <!--- 
 * What the algorithm does
 
-    <img src="./assets/twobranch.png" alt="drawing" width="400" />
+<img src="./assets/twobranch.png" alt="drawing" width="400" />
 
 Two flow paths to SE(3)-transform and deep encode
 the point cloud. The **solid line** indicates the **transform-
@@ -16,10 +16,13 @@ encoding path** to generate implicit map of $\mathbf T_g$ -transformed
 point cloud P. The **dash line** shows the **encoding-transform
 path**, transforming the map of features with transformation
 $\mathbf S_g$ , that is introduced in this paper.
--->
+
 
 * Application with proposed **remapping module** that **allows for loop clusure**
+
 ![Plot](./assets/pipeline_neuralImplicit.png)
+-->
+***Brief intro of this project shows in [website](https://jarrome.github.io/IMT-MAP/).***
 
 ## 0. Install
 ```
