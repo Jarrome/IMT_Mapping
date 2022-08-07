@@ -26,7 +26,7 @@ $\mathbf S_g$ , that is introduced in this paper.
 
 ---
 
-**Update 7. Aug 2022**: seems you can also download [replica dataset here](https://github.com/cvg/nice-slam#replica-1). I donot verify, but seems the same.)
+**Update 7. Aug 2022**: seems you can also download [replica dataset here](https://github.com/cvg/nice-slam#replica-1). I donot verify, but seems the same.
 
 
 
