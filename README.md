@@ -5,6 +5,7 @@ This repository contains the implementation of our **RAL 2022** paper: **An Algo
 [Yijun Yuan](https://jarrome.github.io/), [Andreas Nüchter](https://www.informatik.uni-wuerzburg.de/space/mitarbeiter/nuechter/)
 
 [Preprint](https://arxiv.org/abs/2206.08712) |  [website](https://jarrome.github.io/IMT-MAP/)
+
 <!--- 
 * What the algorithm does
 
@@ -17,13 +18,20 @@ point cloud P. The **dash line** shows the **encoding-transform
 path**, transforming the map of features with transformation
 $\mathbf S_g$ , that is introduced in this paper.
 
-
 * Application with proposed **remapping module** that **allows for loop clusure**
 
 ![Plot](./assets/pipeline_neuralImplicit.png)
 -->
 ***Brief intro of this project shows in [website](https://jarrome.github.io/IMT-MAP/).***
 
+---
+
+**Update 7. Aug 2022**: seems you can also download [replica dataset here](https://github.com/cvg/nice-slam#replica-1). I donot verify, but seems the same.)
+
+
+
+
+---
 ## 0. Install
 ```
 conda create -n recons python=3.6
@@ -43,20 +51,20 @@ We have pretrained parameter of encoder-decoder in ```./treasure``` for easy use
 * Download [ICL-NUIM](https://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html) data (TUM RGB-D Compatible PNGs with noise). 
 ```mkdir ./data``` and unzip inside, for example, you will have ```./data/ICL_NUIM/lr_kt0n``` 
 
-*(Replaca dataset requires contacting [iMAP](https://edgarsucar.github.io/iMAP/) author, and put into ./data as described in ./config/ifr-fusion-replica.yaml)*
+    *(Replaca dataset requires contacting [iMAP](https://edgarsucar.github.io/iMAP/) author, and put into ./data as described in ./config/ifr-fusion-replica.yaml)*
 
 * For quick play, please download our [pose stream](https://drive.google.com/drive/folders/1NLp7eGjmjr5zK8QnRqlyghKEH-sn_0mj?usp=sharing) computed from ORB-SLAM2.
 ```mkdir ./treasure/orbslam2_record``` and unzip inside, for example, you will have ```./treasure/orbslam2_record/lrkt0n```.
 
-1.  **Reconstruction Demo** (will draw a window with incremental reconstruction and output the intermediary mesh in args.outdir. )
-```
-python pose_fmt.py ./configs/ifr-fusion-lr-kt0.yaml
-``` 
+    1.  **Reconstruction Demo** (will draw a window with incremental reconstruction and output the intermediary mesh in args.outdir. )
+    ```
+    python pose_fmt.py ./configs/ifr-fusion-lr-kt0.yaml
+    ``` 
 
-2. **Transformation Demo** (will save a. transform-then-encode [tgt.ply] and b. encode-then-transform [tsrc.ply] to args.outdir+'transform') 
-```
-python exp_transform.py ./configs/ifr-fusion-lr-kt0.yaml
-``` 
+    2. **Transformation Demo** (will save a. transform-then-encode [tgt.ply] and b. encode-then-transform [tsrc.ply] to args.outdir+'transform') 
+    ```
+    python exp_transform.py ./configs/ifr-fusion-lr-kt0.yaml
+    ``` 
 
 Please find more detail in configs/[config_file.yaml].
 
