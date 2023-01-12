@@ -1,4 +1,4 @@
-# [[NIMTRE]: SE(3)-Transformation on Neural Implicit Maps for Remapping Functions](https://jarrome.github.io/IMT-MAP/)
+# [[NIM-REM]: SE(3)-Transformation on Neural Implicit Maps for Remapping Functions](https://jarrome.github.io/IMT-MAP/)
 
 This repository contains the implementation of our **RAL 2022** paper: **An Algorithm for the SE(3)-Transformation on Neural Implicit Maps for Remapping Functions**.
 
@@ -77,6 +77,11 @@ Reconstruction goes with ```python pose_fmt.py [config_file.yaml] ``` where we p
 
 In addition, we provide a guidline on *what does it mean* in [config readme](./configs/).
 
+## 3. Transform back our mesh to GT mesh coordinate
+For the convenience of friends to comparing with GT,
+please follow [issue 1](https://github.com/Jarrome/IMT_Mapping/issues/1#issuecomment-1380967499).
+
+
 ---
 
 ## (Optional) Training the VNN-Encoder and Decoder
@@ -113,6 +118,7 @@ python pose_fmt_kitti.py ./configs/test_kitti.yaml
 
 ## What's Next?
 1. A full reconstruction release.
+
 
 
 ## Citation
