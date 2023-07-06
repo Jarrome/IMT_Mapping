@@ -42,6 +42,8 @@ pip install torch-scatter==1.4 open3d numba opencv-python
 ```
 *Be sure you have build-essential before torch-scatter (sudo apt install build-essential). If you still have problem on torch-scatter, please directly copy that torch-scatter function into the script.*
 
+*Here I provide a [scatter.py](https://github.com/Jarrome/NSLF-OL/blob/master/utils/scatter.py) from [another project](https://github.com/Jarrome/NSLF-OL/tree/master), in case that you have problem on compiling torch-scatter.*
+
 ## 1. Quick Reconstruction Demo
 
 We have pretrained parameter of encoder-decoder in ```./treasure``` for easy use.
